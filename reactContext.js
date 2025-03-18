@@ -1,6 +1,6 @@
 // This is an example of prop drilling
 
-function AppOne() {
+function App() {
     const theme = "dark"; // Theme data at top level
 
     return <Parent theme={theme} />;
@@ -18,7 +18,7 @@ function ThemedButton({ theme }) {
     return <button className={theme}>Themed Button</button>;
 }
 
-export default AppOne;
+export default App;
 
 
 // Notice the theme prop is passed to multple components uncessecerily?
@@ -52,5 +52,5 @@ function ThemedButton() {
   return <button className={theme}>Themed Button</button>;
 }
 
-export default App;
+// export default App; Commented for multiple export issue. 
 

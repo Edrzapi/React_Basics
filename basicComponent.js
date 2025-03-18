@@ -29,7 +29,6 @@ export function Goodbye() {
 // Consumed :
 import { Greeting, Goodbye } from './Greeting';  // Importing by exact names
 
-
 import { Greeting as WelcomeMessage, Goodbye as FarewellMessage } from './Greeting';
 
 console.log(WelcomeMessage);  // Now this refers to Greeting()
